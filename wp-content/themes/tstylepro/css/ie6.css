@@ -1,0 +1,55 @@
+@charset "utf-8";
+html { overflow: hidden; }
+body { height: 100%; position: relative; background: none; }
+#wrap { width: 950px; overflow: auto; overflow-x: hidden; background: #fff url(body.png) repeat-x; }
+#head,
+#container,
+#foot { width: 950px; margin: 0 auto; }
+#container { padding-bottom: 0; }
+#head-logo { overflow: hidden; }
+.tab { overflow: hidden; }
+#nav li a { margin-bottom: -9px; }
+#nav ul ul { z-index: 5; width: 88px; }
+.box { height: 1px; }
+.f-m h2 { overflow: hidden; }
+.f-m h2 a.more { float: right; }
+#comment { margin-bottom: -3px; }
+#choice .list li { height: 24px; overflow: hidden; }
+#side #choice .list li { height: 22px; background-position: -50px 10px; }
+#part .list li { height: 25px; overflow: hidden; }
+#part .list li em { width: 278px; }
+#part .list li i { margin-bottom: 20px; }
+.list .synopsis a { height: 32px; }
+#slide .f-m { overflow: hidden; }
+#slide-pic p { bottom: -1px; }
+#slide-btn { bottom: 8px; }
+#home-album li img { width: 80px; height: 60px; }
+#home-album li a span { overflow: hidden; }
+#home-friendy-img li { display: inline; }
+#column-nav { overflow: hidden; }
+#home-column { margin-bottom: 0; }
+#home-dfn { float: none; }
+#home-dfn .f-m { width: 228px; }
+.list li em { width: 470px; }
+#album-list li { display: inline; }
+#album-list li .cover img { width: 100px; height: 100px; }
+#album-list li .count { display: inline; }
+#contact .box { overflow: hidden; }
+#contact-li li { display: inline; }
+#friendly li { display: inline; }
+#to-top { position: absolute; right: 24px; }
+.gallery-item { display: inline; }
+.cmt-single { height: 10px; }
+.comment-body { height: 50px; position: relative; }
+.pagination li a:hover,
+.pagination li span.current { margin-right: -5px; }
+#friendly { height: 10px; margin: 5px 0 8px; }
+#respond .box { position: relative; }
+#respond-form li { padding-top: 8px; padding-bottom: 2px; }
+#respond-form label { position: relative; top: 5px; }
+#side-cmt { float: none; }
+#side-cmt .f-m { width: 208px; }
+.side-cmtli li { width: 180px; margin-bottom: 9px; }
+#tips,
+#tips p { width: 180px; overflow: hidden; }
+#tips { border-color:  #000; border-width: 0 1px 1px 0; }
