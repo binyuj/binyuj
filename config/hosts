@@ -125,10 +125,12 @@
 2404:6800:4005:3::e         r9---sn-i3b76n7z.c.youtube.com
 
 2404:6800:4005:4:0:0:0:f    r10---sn-i3b7sn76.c.youtube.com
+2404:6800:4005:e::f         r10---sn-i3b7sn7s.c.youtube.com
 2404:6800:4005:2:0:0:0:f    r10---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:3::f         r10---sn-i3b76n7z.c.youtube.com
 2404:6800:4005:0:0:0:0:f    r10---hkg05s01.c.youtube.com
 2404:6800:4005:6:0:0:0:f    r10---sn-i3b7sn7k.c.youtube.com
+
 2404:6800:4005:4:0:0:0:10   r11---sn-i3b7sn76.c.youtube.com
 2404:6800:4005:7::10        r11---sn-i3b7sn7r.c.youtube.com
 2404:6800:4005:3:0:0:0:10   r11---sn-i3b76n7z.c.youtube.com
