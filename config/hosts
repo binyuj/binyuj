@@ -111,9 +111,11 @@
 
 2404:6800:4005:5::c         r7---sn-i3b7sn7d.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---sn-i3b76n7e.c.youtube.com
+2404:6800:4005:3::c         r7---sn-i3b76n7z.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---hkg05s01.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---sn-p5qlsu7e.c.youtube.com
 74.125.213.86               r7---sn-o097zues.c.youtube.com
+
 2404:6800:4005:0:0:0:0:6    r8---sn-cg07luez.c.youtube.com
 2404:6800:4005::d           r8---sn-i3b76n7e.c.youtube.com
 2404:6800:4005:0:0:0:0:6    r8---sn-p5qlsu7r.c.youtube.com
@@ -140,17 +142,20 @@
 2404:6800:4005:3:0:0:0:10   r11---sn-i3b76n7z.c.youtube.com
 
 2404:6800:4005:4::11        r12---sn-i3b7sn76.c.youtube.com
+2404:6800:4005:1::11        r12---sn-i3b76n7l.c.youtube.com
 2404:6800:4005:2::11        r12---sn-i3b76n7s.c.youtube.com
 
-2404:6800:4005:4::12        r13---sn-i3b7sn76.c.youtube.com
 2404:6800:4005::12          r13---sn-i3b76n7e.c.youtube.com
+2404:6800:4005:4::12        r13---sn-i3b7sn76.c.youtube.com
 2404:6800:4005:5:0:0:0:12   r13---sn-i3b7sn7d.c.youtube.com
+2404:6800:4005:d::12        r13---sn-i3b7sn7l.c.youtube.com
 2404:6800:4005:1:0:0:0:12   r13---sn-i3b76n7l.c.youtube.com
 2404:6800:4005:3:0:0:0:12   r13---sn-i3b76n7z.c.youtube.com
 2404:6800:4005:1:0:0:0:12   r13---sn-p5qlsm7z.c.youtube.com
 
 2404:6800:4005:4::13        r14---sn-i3b7sn76.c.youtube.com
 2404:6800:4005:6::13        r14---sn-i3b7sn7k.c.youtube.com
+2404:6800:4005:f::13        r14---sn-i3b7sn7z.c.youtube.com
 2404:6800:4005:3:0:0:0:13   r14---sn-i3b76n7z.c.youtube.com
 2404:6800:4005:2::13        r14---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:3:0:0:0:13   r14---sn-npo7enes.c.youtube.com
@@ -162,10 +167,12 @@
 2404:6800:4005:d::14        r15---sn-i3b7sn7l.c.youtube.com
 
 2404:6800:4005:1::15        r16---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:5::15        r16---sn-i3b7sn7d.c.youtube.com
 2404:6800:4005::15          r16---sn-i3b76n7e.c.youtube.com
 2404:6800:4005:2:0:0:0:15   r16---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:3::15        r16---sn-i3b76n7z.c.youtube.com
+2404:6800:4005:5::15        r16---sn-i3b7sn7d.c.youtube.com
+2404:6800:4005:c::15        r16---sn-i3b7sn7e.c.youtube.com
+
 2404:6800:4005:0:0:0:0:16   r17---hkg05s01.c.youtube.com
 2404:6800:4005:2:0:0:0:16   r17---hkg05s03.c.youtube.com
 2404:6800:4005:1:0:0:0:16   r17---sn-i3b76n7l.c.youtube.com
@@ -173,6 +180,7 @@
 2404:6800:4005:1:0:0:0:17   r18---sn-i3b76n7l.c.youtube.com
 2404:6800:4005:2::17        r18---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:5:0:0:0:17   r18---sn-i3b7sn7d.c.youtube.com
+2404:6800:4005:c::17        r18---sn-i3b7sn7e.c.youtube.com
 2404:6800:4005:d::17        r18---sn-i3b7sn7l.c.youtube.com
 
 2404:6800:4005:1:0:0:0:18   r19---sn-i3b76n7l.c.youtube.com
