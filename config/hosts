@@ -32,7 +32,10 @@
 108.166.200.6   www.ntdtv.com
 108.166.200.6   imgs.ntdtv.com
 50.23.200.239   twitpic.com
-50.19.249.227   sharesend.com
+54.225.228.203   sharesend.com
+54.225.177.29   sharesend.com
+184.73.192.39   sharesend.com
+50.19.213.161   sharesend.com
 #Thunder
 123.129.242.212   hub5idx.shub.sandai.net
 121.9.209.137   hub5pr.sandai.net
@@ -79,8 +82,9 @@
 2404:6800:4005:7:0:0:0:7    r2---sn-i3b7sn7r.c.youtube.com
 2404:6800:4005:7:0:0:0:7    r2---sn-p5qlsu7s.c.youtube.com
 
-2404:6800:4005:6::8         r3---sn-i3b7sn7k.c.youtube.com
 2404:6800:4005:2:0:0:0:8    r3---sn-i3b76n7s.c.youtube.com
+2404:6800:4005:c::8         r3---sn-i3b7sn7e.c.youtube.com
+2404:6800:4005:6::8         r3---sn-i3b7sn7k.c.youtube.com
 
 
 2404:6800:4005:0:0:0:0:9    r4---hkg05s01.c.youtube.com
@@ -109,9 +113,10 @@
 2404:6800:4005:0:0:0:0:b    r6---hkg05s01.c.youtube.com
 2404:6800:4005:0:0:0:0:b    r6---sn-p5qlsu7d.c.youtube.com
 
-2404:6800:4005:5::c         r7---sn-i3b7sn7d.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---sn-i3b76n7e.c.youtube.com
 2404:6800:4005:3::c         r7---sn-i3b76n7z.c.youtube.com
+2404:6800:4005:5::c         r7---sn-i3b7sn7d.c.youtube.com
+2404:6800:4005:c::c         r7---sn-i3b7sn7e.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---hkg05s01.c.youtube.com
 2404:6800:4005:0:0:0:0:c    r7---sn-p5qlsu7e.c.youtube.com
 74.125.213.86               r7---sn-o097zues.c.youtube.com
@@ -156,6 +161,7 @@
 2404:6800:4005:4::13        r14---sn-i3b7sn76.c.youtube.com
 2404:6800:4005:6::13        r14---sn-i3b7sn7k.c.youtube.com
 2404:6800:4005:f::13        r14---sn-i3b7sn7z.c.youtube.com
+2404:6800:4005:1::13        r14---sn-i3b76n7l.c.youtube.com
 2404:6800:4005:3:0:0:0:13   r14---sn-i3b76n7z.c.youtube.com
 2404:6800:4005:2::13        r14---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:3:0:0:0:13   r14---sn-npo7enes.c.youtube.com
@@ -175,8 +181,10 @@
 
 2404:6800:4005:0:0:0:0:16   r17---hkg05s01.c.youtube.com
 2404:6800:4005:2:0:0:0:16   r17---hkg05s03.c.youtube.com
+2404:6800:4005::16          r17---sn-i3b76n7e.c.youtube.com
 2404:6800:4005:1:0:0:0:16   r17---sn-i3b76n7l.c.youtube.com
 
+2404:6800:4005::17          r18---sn-i3b76n7e.c.youtube.com
 2404:6800:4005:1:0:0:0:17   r18---sn-i3b76n7l.c.youtube.com
 2404:6800:4005:2::17        r18---sn-i3b76n7s.c.youtube.com
 2404:6800:4005:3::17        r18---sn-i3b76n7z.c.youtube.com
@@ -506,7 +514,7 @@
 2404:6800:4005:c00::8d welcome-cros.appspot.com #appspot.l.google.com
 
 #Code 代码
-#2404:6800:4008:c01::8a code.google.com #code.l.google.com
+2404:6800:4008:c00::8a code.google.com #code.l.google.com
 #2404:6800:4005:c00::8a code.l.google.com
 2404:6800:4005:c00::52 *.googlecode.com #googlecode.l.google.com
 #2404:6800:4005:c00::52 googlecode.l.google.com
@@ -6111,7 +6119,7 @@
 203.208.46.200  clients5.google.com
 203.208.46.200  clients6.google.com
 203.208.46.200  clients7.google.com
-203.208.46.200  code.google.com
+#203.208.46.200  code.google.com
 203.208.46.200  code.l.google.com
 203.208.46.200  csi.l.google.com
 203.208.46.200  desktop.google.com
