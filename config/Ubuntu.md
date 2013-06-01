@@ -12,4 +12,9 @@ Ubuntu键盘大小写指示器:indicator-keylock
     sudo add-apt-repository ppa:tsbarnes/indicator-keylock
     sudo apt-get update && sudo apt-get install indicator-keylock
     
-
+userscripts
+* [OpenGG.Clean.Player(Bae](http://userscripts.org/scripts/show/162286)
+* [YouTube Center](http://userscripts.org/scripts/show/114002)
+* [贴吧小尾巴](http://userscripts.org/scripts/show/150519)
+* [图片化for chrome](http://userscripts.org/scripts/show/145774)
+* [TiebaUsualSmilier](http://userscripts.org/scripts/show/142404)
