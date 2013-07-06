@@ -15,18 +15,18 @@ def main():
         config = ConfigParser.ConfigParser()
         config.read('proxy.ini')
         appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
-        print('Found appids:%s\n') % appids
+        print('Found appids:%s\n' % appids)
     except Exception:
         pass
 
     for filename in filelist:
         fileurl = 'https://github.com/goagent/goagent/raw/3.0/local/'+filename
-        print('Updating "%s" ... \n...from "%s"') % (filename, fileurl)
+        print('Updating "%s" ... \n...from "%s"' % (filename, fileurl))
         content = urllib.urlopen(fileurl).read()
         target = open(filename, 'wb')
         target.write(content)
         target.close()
-        print('Successful updated "%s" !\n-----------------------------------') % filename
+        print('Successful updated "%s" !\n-----------------------------------' % filename)
         if filename == 'goagent_gtk.py':
             os.chmod(filename, 0755)
     print('All file up to date. Done!')
