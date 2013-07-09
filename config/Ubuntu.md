@@ -5,7 +5,7 @@
     
 安装软件
 
-    sudo apt-get install python-dev python-appindicator python-vte sublime-text conky git ruby
+    sudo apt-get install python-dev python-vte python-openssl sublime-text conky git ruby expect dconf-tools
     
 Ubuntu键盘大小写指示器:indicator-keylock
 
