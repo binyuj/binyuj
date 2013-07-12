@@ -267,19 +267,20 @@ def main():
     if os.path.islink(__file__):
         __file__ = getattr(os, 'readlink', lambda x: x)(__file__)
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    
-    if sys.argv[1].startwith('--'):
+
+    if sys.argv[1].startswith('--'):
         option = sys.argv[1][2:]
         if option == 'sleep':
             if sys.argv[2]:
-                time.sleep(sys.argv[2])
+                time.sleep(float(sys.argv[2]))
             else:
                 time.sleep(10)
         else:
             print '''GoAgent GTK Launcher
-                  Options include: 
-                  --sleep [time]\t: sleep [time] second to start GoAgent
-                  --help \t: Display this help''' 
+    Options Usage: python goagent-gtk.py [--command]
+                  
+        --sleep [time] :\t sleep [time] second to start GoAgent,leave blank to use default 10s
+        --help         :\t Display this help''' 
 
     if platform.dist()[0] == 'Ubuntu':
         drop_desktop()
