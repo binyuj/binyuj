@@ -268,15 +268,17 @@ def main():
         __file__ = getattr(os, 'readlink', lambda x: x)(__file__)
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-    if sys.argv[1].startswith('--'):
-        option = sys.argv[1][2:]
-        if option == 'sleep':
-            if sys.argv[2]:
-                time.sleep(float(sys.argv[2]))
+    if len(sys.argv)>1:
+        if sys.argv[1].startswith('--'):
+            option = sys.argv[1][2:]
+            if option == 'sleep':
+                if sys.argv[2]:
+                    time.sleep(float(sys.argv[2]))
+                else:
+                    time.sleep(10)
             else:
-                time.sleep(10)
-        else:
-            print '''GoAgent GTK Launcher
+                print '''\
+GoAgent GTK Launcher
     Options Usage: python goagent-gtk.py [--command]
                   
         --sleep [time] :\t sleep [time] second to start GoAgent,leave blank to use default 10s
