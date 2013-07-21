@@ -149,7 +149,11 @@ class GoAgentGTK:
 
     def __init__(self, window, terminal):
         self.window = window
+        self.window.set_title('GoAgent is running')
+        # 居中显示
+        self.window.set_position(gtk.WIN_POS_CENTER)
         self.terminal = terminal
+        self.window.connect('delete-event',self.delete_event)
 
         if os.system('which python3') == 0:
             self.command[1] = 'python3'
@@ -242,6 +246,7 @@ class GoAgentGTK:
         if self.childexited:
             self.terminal.disconnect(self.childexited)
         os.system('kill -9 %s' % self.childpid)
+        self.window.set_title('GoAgent was stoped')
 
     def on_reload(self, widget, data=None):
         if self.childexited:
@@ -250,6 +255,7 @@ class GoAgentGTK:
         self.on_show(widget, data)
         self.childpid = self.terminal.fork_command(self.command[0], self.command, os.getcwd())
         self.childexited = self.terminal.connect('child-exited', lambda term: gtk.main_quit())
+        self.window.set_title('GoAgent is running')
 
     def show_hide_toggle(self, widget, data= None):
         if self.window.get_property('visible'):
@@ -260,6 +266,10 @@ class GoAgentGTK:
     def on_quit(self, widget, data=None):
         gtk.main_quit()
 
+    def delete_event(self, widget, data=None):
+        self.on_hide(widget, data)
+        # 默认最小化至托盘
+        return True
 
 def main():
     global __file__
@@ -282,13 +292,12 @@ GoAgent GTK Launcher
     Options Usage: python goagent-gtk.py [--command]
                   
         --sleep [time] :\t sleep [time] second to start GoAgent,leave blank to use default 10s
-        --help         :\t Display this help''' 
+        --help         :\t Display this help'''
 
     if platform.dist()[0] == 'Ubuntu':
         drop_desktop()
 
     window = gtk.Window()
-    window.set_position(gtk.WIN_POS_CENTER)
     terminal = vte.Terminal()
     GoAgentGTK(window, terminal)
     gtk.main()
