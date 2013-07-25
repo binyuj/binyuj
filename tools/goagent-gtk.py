@@ -212,7 +212,7 @@ class GoAgentGTK:
 
     def show_notify(self, message=None, timeout=None):
         if pynotify and message:
-            notification = pynotify.Notification('GoAgent Notify', message)
+            notification = pynotify.Notification('GoAgent Notify', message, logo_file)
             notification.set_hint('x', 200)
             notification.set_hint('y', 400)
             if timeout:
