@@ -140,6 +140,11 @@ def should_visible():
 #gtk.main_quit = lambda: None
 #appindicator = None
 
+logo_file = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'goagent-logo.png')
+if not os.path.isfile(logo_file):
+    with open(logo_file, 'wb') as fp:
+        fp.write(base64.b64decode(GOAGENT_LOGO_DATA))
+                
 
 class GoAgentGTK:
 
@@ -149,11 +154,14 @@ class GoAgentGTK:
 
     def __init__(self, window, terminal):
         self.window = window
+        self.window.set_size_request(652, 447)
         self.window.set_title('GoAgent is running')
         # 居中显示
         self.window.set_position(gtk.WIN_POS_CENTER)
-        self.terminal = terminal
+        self.window.set_icon_from_file(logo_file)
         self.window.connect('delete-event',self.delete_event)
+        
+        self.terminal = terminal
 
         if os.system('which python3') == 0:
             self.command[1] = 'python3'
@@ -171,21 +179,17 @@ class GoAgentGTK:
         if should_visible():
             self.window.show_all()
 
-        logo_filename = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'goagent-logo.png')
-        if not os.path.isfile(logo_filename):
-            with open(logo_filename, 'wb') as fp:
-                fp.write(base64.b64decode(GOAGENT_LOGO_DATA))
-        self.window.set_icon_from_file(logo_filename)
+
 
         if appindicator:
             self.trayicon = appindicator.Indicator('GoAgent', 'indicator-messages', appindicator.CATEGORY_APPLICATION_STATUS)
             self.trayicon.set_status(appindicator.STATUS_ACTIVE)
             self.trayicon.set_attention_icon('indicator-messages-new')
-            self.trayicon.set_icon(logo_filename)
+            self.trayicon.set_icon(logo_file)
             self.trayicon.set_menu(self.make_menu())
         else:
             self.trayicon = gtk.StatusIcon()
-            self.trayicon.set_from_file(logo_filename)
+            self.trayicon.set_from_file(logo_file)
             self.trayicon.connect('popup-menu', lambda i, b, t: self.make_menu().popup(None, None, gtk.status_icon_position_menu, b, t, self.trayicon))
             self.trayicon.connect('activate', self.show_hide_toggle)
             self.trayicon.set_tooltip('GoAgent')
