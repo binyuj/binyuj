@@ -5,7 +5,7 @@
 import urllib
 import os
 
-filelist = ['proxy.ini', 'proxy.py', 'goagent_gtk.py', 'cacert.pem','addto-startup.py', 'proxy.pac']
+filelist = ['proxy.ini', 'proxy.py', 'goagent-gtk.py', 'cacert.pem','addto-startup.py', 'proxy.pac']
 
 def main():
     try:
