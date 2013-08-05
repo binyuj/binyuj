@@ -3,22 +3,7 @@
 
 ### pagodabox.com ###
 50.97.141.36    pagodabox.com
-50.97.141.36    rough-rosalie.pagodabox.com
-50.97.141.36    kind-ka.pagodabox.com
 
-
-###tuita###
-58.215.44.221       tuita.com
-58.215.44.221       www.tuita.com
-58.241.31.176       www.tuita.com
-58.215.44.221       help.tuita.com
-58.215.44.221       tuiter.tuita.com
-58.215.44.221       5ifan.tuita.com
-58.215.44.221       lzyzyh.tuita.com
-58.215.44.221       moediy2012.tuita.com
-58.215.44.221       duobei.tuita.com
-58.215.44.221       jidang.tuita.com
-58.215.44.221       mnddla.tuita.com
 ### imageshack.us ###
 208.94.0.193        imageshack.us
 208.94.0.193        imageshack.us
@@ -27,7 +12,6 @@
 
 216.194.70.6    shell.cjb.net
 184.82.38.87    www.xpdo.net
-58.215.133.30   jiaogui.zyue.com
 37.220.34.245   www.ntdtv.com
 108.166.200.6   www.ntdtv.com
 108.166.200.6   imgs.ntdtv.com
@@ -6710,7 +6694,9 @@
 #GitHub START
 204.232.175.90 github.com
 204.232.175.94 gist.github.com
-207.97.227.252 nodeload.github.com
+192.30.252.144 nodeload.github.com
+192.30.252.146 nodeload.github.com
+192.30.252.147 nodeload.github.com
 199.27.75.133  raw.github.com
 107.22.3.110   status.github.com
 204.232.175.78 training.github.com
@@ -6718,7 +6704,7 @@
 #GitHub END
 
 #Feedly START
-173.194.38.137  feedly-beta.appspot.com
+74.125.128.121  feedly-beta.appspot.com
 74.125.128.121  s3.feedly.com
 #Feedly END
 
