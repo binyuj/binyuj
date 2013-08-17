@@ -1,12 +1,15 @@
-解决[mentohust](https://code.google.com/p/mentohust/)出现"打开libnotify失败"
+解决[mentohust](https://code.google.com/p/mentohust/)出现"打开libnotify失败",两种方法
 
-    sudo ln -s /usr/lib/i386-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1
-    sudo ln -s /usr/lib/x86_64-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1
-    
+1. 用十六进制编辑器编辑```mentohust```将原二进制文件中libnotify.so.1改为libnotify.so.4
+2. 做链接
+    * ```sudo ln -s /usr/lib/i386-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1```
+    * ```sudo ln -s /usr/lib/x86_64-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1```
+
+
 安装软件
 
     sudo apt-get install python-dev python-vte python-openssl python3-openssl python-pip python3-pip python-m2crypto sublime-text conky git ruby expect dconf-tools icedtea-6-plugin
-    sudo pip install shadowsocks
+    sudo pip install shadowsocks rhc cctrl
     
 Ubuntu键盘大小写指示器:indicator-keylock, 双显卡切换Bumblebee
 
