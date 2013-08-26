@@ -25,6 +25,9 @@
 121.9.209.137   hub5pr.sandai.net
 
 127.0.0.1  activate.adobe.com
+
+2404:6800:4005:c00::79  s3.feedly.com
+
 2404:6800:4005:c00::63  ipv6.google.com
 2404:6800:4005:c00::69  ipv6.google.com
 2404:6800:4005:c00::65  goagent.googlecode.com
