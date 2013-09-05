@@ -1,6 +1,7 @@
 解决[mentohust](https://code.google.com/p/mentohust/)出现"打开libnotify失败",两种方法
 
 1. 用十六进制编辑器编辑```mentohust```将原二进制文件中libnotify.so.1改为libnotify.so.4
+    * ```sudo sed -i 's/libnotify.so.1/libnotify.so.4/' /usr/bin/mentohust```
 2. 做链接
     * ```sudo ln -s /usr/lib/i386-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1```
     * ```sudo ln -s /usr/lib/x86_64-linux-gnu/libnotify.so.4.0.0 /usr/lib/libnotify.so.1```
