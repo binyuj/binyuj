@@ -59,7 +59,7 @@ draw_borders no
 stippled_borders 8
 
 # border margins
-border_margin 4
+border_inner_margin 4
 
 # border width
 border_width 1
@@ -99,7 +99,7 @@ override_utf8_locale yes
 
 
 # Add spaces to keep things from moving about?  This only affects certain objects.
-use_spacer yes
+#use_spacer left
 #Note: doesn't work in conky 1.2 =(
 
 #   mldonkey_hostname     Hostname for mldonkey stuff, defaults to localhost
@@ -348,7 +348,7 @@ ${offset 240}IP: ${addr interface}
 #${offset 240}对外 IP: ${alignr}${color2}${execi 60 /usr/share/conkycolors/bin/conkyIp}${color}
 
 ${offset 240}${color slate grey}AC: ${color } $acpiacadapter
-${offset 240}${color slate grey}Fan: ${color } $acpifan 
+#${offset 240}${color slate grey}Fan: ${color } $acpifan 
 ${offset 240}${color slate grey}电池: ${color } $battery_percent%
 
 ${offset 240}${color slate grey}Disk I/O:
