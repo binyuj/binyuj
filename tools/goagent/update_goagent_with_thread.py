@@ -42,21 +42,25 @@ class Update(threading.Thread):
             print('chmod '+filename)
         if filename == 'proxy.ini' and appids:
             try:
+                config.read('proxy.ini')
                 config.set('gae', 'appid', appids)
-                with open('proxy.ini', 'w') as fp:
-                   config.write(fp)
+                config.set('paas', 'fetchserver', fetchserver)
+                config.write(open('proxy.ini', 'wb'))
                 print('Successful wrote appids !')
-            except Exception:
-                print('wrote appids failed (T＿T)')
+            except Exception,e:
+                print('wrote appids failed (T＿T)\n%s' % e)
 
 def main():
     global config
     global appids
+    global fetchserver
     configparser.RawConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = configparser.ConfigParser()
     config.read('proxy.ini')
     appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
     print('Found appids:%s\n' % appids)
+    fetchserver = config.has_option('paas', 'fetchserver') and config.get('paas', 'fetchserver')
+    print('Found fetchserver:%s\n' % fetchserver)
 
     for filename in filelist:
         thread = Update(filename)
