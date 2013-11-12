@@ -28,3 +28,7 @@ userscripts
 * [Auto_checkin_xiami.com](http://userscripts.org/scripts/show/137123)
 * [Crack Url Wait Code Login For Chrome](http://userscripts.org/scripts/show/157621)
 * [Music liker for Beauty](http://userscripts.org/scripts/show/161719)
+* [Tieba Advanced](http://userscripts.org/scripts/show/152918)
+* [Tieba.OpenTail](http://userscripts.org/scripts/show/180361)
+* [Tieba.OpenTail.ManagerDetector](http://userscripts.org/scripts/show/180487)
+* [Tieba Client](http://userscripts.org/scripts/show/177032)
