@@ -44,7 +44,9 @@ class Update(threading.Thread):
             try:
                 config.read('proxy.ini')
                 config.set('gae', 'appid', appids)
+                config.set('gae', 'password', gae_password)
                 config.set('paas', 'fetchserver', fetchserver)
+                config.set('paas', 'password', paas_password)
                 config.write(open('proxy.ini', 'wb'))
                 print('Successful wrote appids !')
             except Exception,e:
@@ -53,13 +55,17 @@ class Update(threading.Thread):
 def main():
     global config
     global appids
+    global gae_password
     global fetchserver
+    gloabl paas_password
     configparser.RawConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = configparser.ConfigParser()
     config.read('proxy.ini')
     appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
+    gae_password = config.has_option('gae', 'password') and config.get('gae', 'password')
     print('Found appids:%s\n' % appids)
     fetchserver = config.has_option('paas', 'fetchserver') and config.get('paas', 'fetchserver')
+    paas_password = config.has_option('paas', 'password') and config.get('paas', 'password')
     print('Found fetchserver:%s\n' % fetchserver)
 
     for filename in filelist:

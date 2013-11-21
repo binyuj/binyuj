@@ -69,6 +69,11 @@ TI/Wjlv1JdUdNKwHcvfumFNuPQPLziD3m3DRGyBPkWsS2s/h4qcI+g/uPOcJK79rWbTv0bEy9rqZ
 tDXWvuH0qD8PponhVLu3Dv6dmGXsda2bpdGIxr6lvzy3D2CLt7HJY3a/n9r/N/sfrBt2air9qXQA
 AAAASUVORK5CYII="""
 
+try:
+    import proxy
+    __goagent_version__ = proxy.__version__
+except Exception:
+    __goagent_version__ = 'Not Found'
 import sys
 import os
 import re
@@ -154,8 +159,8 @@ class GoAgentGTK:
 
     def __init__(self, window, terminal):
         self.window = window
+        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '正在运行')))
         self.window.set_size_request(652, 447)
-        self.window.set_title('GoAgent is running')
         # 居中显示
         self.window.set_position(gtk.WIN_POS_CENTER)
         self.window.set_icon_from_file(logo_file)
@@ -163,8 +168,10 @@ class GoAgentGTK:
         
         self.terminal = terminal
 
-        if os.system('which python3') == 0:
-            self.command[1] = 'python3'
+        for cmd in ('python2.7', 'python27', 'python2'):
+            if os.system('which %s' % cmd) == 0:
+                self.command[1] = cmd
+                break
 
         self.window.add(terminal)
         self.childpid = self.terminal.fork_command(self.command[0], self.command, os.getcwd())
@@ -250,7 +257,8 @@ class GoAgentGTK:
         if self.childexited:
             self.terminal.disconnect(self.childexited)
         os.system('kill -9 %s' % self.childpid)
-        self.window.set_title('GoAgent was stoped')
+        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '已停止')))
+        self.trayicon.set_tooltip('GoAgent 已停止')
 
     def on_reload(self, widget, data=None):
         if self.childexited:
@@ -259,7 +267,8 @@ class GoAgentGTK:
         self.on_show(widget, data)
         self.childpid = self.terminal.fork_command(self.command[0], self.command, os.getcwd())
         self.childexited = self.terminal.connect('child-exited', lambda term: gtk.main_quit())
-        self.window.set_title('GoAgent is running')
+        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '正在运行')))
+        self.trayicon.set_tooltip('GoAgent 正在运行')
 
     def show_hide_toggle(self, widget, data= None):
         if self.window.get_property('visible'):
@@ -298,7 +307,8 @@ GoAgent GTK Launcher
         --sleep [time] :\t sleep [time] second to start GoAgent,leave blank to use default 10s
         --help         :\t Display this help'''
 
-    if platform.dist()[0] == 'Ubuntu':
+    if not os.path.exists('goagent-logo.png'):
+        # first run and drop shortcut to desktop
         drop_desktop()
 
     window = gtk.Window()
