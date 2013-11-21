@@ -19,6 +19,15 @@ except ImportError:
 
 filelist = ['proxy.ini', 'proxy.py', 'goagent-gtk.py', 'cacert.pem','addto-startup.py', 'proxy.pac']
 
+configparser.RawConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
+config = configparser.ConfigParser()
+config.read('proxy.ini')
+appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
+gae_password = config.has_option('gae', 'password') and config.get('gae', 'password')
+print('Found appids:%s\n' % appids)
+fetchserver = config.has_option('paas', 'fetchserver') and config.get('paas', 'fetchserver')
+paas_password = config.has_option('paas', 'password') and config.get('paas', 'password')
+print('Found fetchserver:%s\n' % fetchserver)
 
 class Update(threading.Thread):
     def __init__(self, filename):
@@ -50,24 +59,9 @@ class Update(threading.Thread):
                 config.write(open('proxy.ini', 'wb'))
                 print('Successful wrote appids !')
             except Exception,e:
-                print('wrote appids failed (T＿T)\n%s' % e)
+                print('wrote appids failed (T＿T)\nError log: %s' % e)
 
 def main():
-    global config
-    global appids
-    global gae_password
-    global fetchserver
-    gloabl paas_password
-    configparser.RawConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
-    config = configparser.ConfigParser()
-    config.read('proxy.ini')
-    appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
-    gae_password = config.has_option('gae', 'password') and config.get('gae', 'password')
-    print('Found appids:%s\n' % appids)
-    fetchserver = config.has_option('paas', 'fetchserver') and config.get('paas', 'fetchserver')
-    paas_password = config.has_option('paas', 'password') and config.get('paas', 'password')
-    print('Found fetchserver:%s\n' % fetchserver)
-
     for filename in filelist:
         thread = Update(filename)
         thread.start()
