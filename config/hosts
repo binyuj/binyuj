@@ -1,3 +1,4 @@
+127.0.0.1  activate.adobe.com
 127.0.0.1 lmlicenses.wip4.adobe.com
 127.0.0.1 lm.licenses.adobe.com
 
@@ -24,7 +25,7 @@
 123.129.242.212   hub5idx.shub.sandai.net
 121.9.209.137   hub5pr.sandai.net
 
-127.0.0.1  activate.adobe.com
+
 
 2404:6800:4005:c00::79  s3.feedly.com
 
@@ -32,7 +33,7 @@
 2404:6800:4005:c00::69  ipv6.google.com
 2404:6800:4005:c00::65  goagent.googlecode.com
 2404:6800:4005:c00::65  ipv6-hosts.googlecode.com 
-#203.208.46.200         code.google.com
+203.208.46.200         code.google.com
 
 #203.208.46.131 appengine.google.com
 #173.194.38.135 appengine.google.com
@@ -5768,19 +5769,24 @@
 2001:500:13::48 whois.arin.net
 
 #Yahoo!
-2001:4998:f011:1fe::3000 www.yahoo.com
-2001:4998:f011:1fe::3000 news.yahoo.com
-2001:4998:f011:1fe::3000 hk.news.yahoo.com
-2001:4998:f011:1fe::3000 dstest.yahoo.com
-2001:4998:f011:1fe::3000 dstest2.yahoo.com
-2001:4998:f011:1fe::3000 dstest3.yahoo.com
+2406:2000:fc:200::c:9102 www.yahoo.com
+2406:2000:fc:200::c:9103 www.yahoo.com
+2406:2000:fc:200::c:9102 news.yahoo.com
+2406:2000:fc:200::c:9102 hk.news.yahoo.com
+2406:2000:fc:200::c:9102 dstest.yahoo.com
+2406:2000:fc:200::c:9102 dstest2.yahoo.com
+2406:2000:fc:200::c:9102 dstest3.yahoo.com
 2406:2000:ac:8::c:9101 tw.news.yahoo.com
 2406:2000:ac:8::c:9102 tw.news.yahoo.com
-2001:4998:f011:1fb::c:1101 l.yimg.com
-2001:4998:f011:1fb::c:1101 l1.yimg.com
-2001:4998:f011:1fb::c:1101 l2.yimg.com
-2001:4998:f011:1fb::c:1101 l3.yimg.com
-2001:4998:f011:1fe::3000 ad.yieldmanager.com
+2406:2000:fc:402::c:2201	l.yimg.com
+2406:2000:fc:402::c:2203	l.yimg.com
+2406:2000:fc:402::c:2201	l.yimg.com
+2406:2000:fc:402::c:2203	l1.yimg.com
+2406:2000:fc:402::c:2201	l1.yimg.com
+2406:2000:fc:402::c:2203	l2.yimg.com
+2406:2000:fc:402::c:2201	l2.yimg.com
+2406:2000:fc:402::c:2203	l3.yimg.com
+2406:2000:fc:200::c:9102 ad.yieldmanager.com
 
 #Uncyclopedia
 2001:470:1d:28::6 uncyclopedia.hk
@@ -5878,7 +5884,7 @@
 2001:778::37 dns64.litnet.lt
 
 #Amazon S3
-2001:778:0:ffff:64:0:cdfb:f2a4 s3.amazonaws.com
+#2001:778:0:ffff:64:0:cdfb:f2a4 s3.amazonaws.com
 2001:778:0:ffff:64:0:4815:c210 twitter-any.s3.amazonaws.com
 2001:778:0:ffff:64:0:4815:c210 twitter-blog.s3.amazonaws.com
 2001:778:0:ffff:64:0:4815:c210 twitter-badges.s3.amazonaws.com
@@ -6624,19 +6630,24 @@
 
 
 #Flickr START
-98.136.43.76    geo.yahoo.com
+67.195.145.196  geo.yahoo.com
+119.160.254.215 l.yimg.com
+119.160.254.197 l.yimg.com
 68.142.250.161  l.yimg.com
-96.6.93.227 s.yimg.com
+96.6.93.227     s.yimg.com
 98.137.88.88    d.yimg.com
-68.142.196.57   c5.ah.yahoo.com
-124.108.120.124 sa.edit.yahoo.com
-66.163.168.247  open.login.yahoo.com
-209.191.92.114  login.yahoo.com
-209.191.92.115  edit.yahoo.com
-209.191.121.31  up.flickr.com
+98.136.246.29   c5.ah.yahoo.com
+106.10.171.230  sa.edit.yahoo.com
+106.10.162.23   open.login.yahoo.com
+68.142.240.31   login.yahoo.com
+68.142.241.194  edit.yahoo.com
+203.84.197.27   up.flickr.com
+203.84.197.9    up.flickr.com
+203.84.197.25   up.flickr.com
+203.84.197.26   up.flickr.com
 209.191.105.102 adjax.flickr.yahoo.com
-204.0.5.35  content.yieldmanager.edgesuite.net
-204.0.5.34  us.js2.yimg.com
+204.0.5.35      content.yieldmanager.edgesuite.net
+204.0.5.34      us.js2.yimg.com
 
 #data from HostsX
 68.142.214.24   flickr.com
@@ -6699,17 +6710,6 @@
 203.208.46.206  ytimg.l.google.com
 #YouTube END
 
-#GitHub START
-204.232.175.90 github.com
-204.232.175.94 gist.github.com
-192.30.252.144 nodeload.github.com
-192.30.252.146 nodeload.github.com
-192.30.252.147 nodeload.github.com
-199.27.75.133  raw.github.com
-107.22.3.110   status.github.com
-204.232.175.78 training.github.com
-204.232.175.90 www.github.com
-#GitHub END
 
 #Feedly START
 74.125.128.121  feedly-beta.appspot.com
