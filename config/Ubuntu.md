@@ -32,3 +32,4 @@ userscripts
 * [Tieba.OpenTail](http://userscripts.org/scripts/show/180361)
 * [Tieba.OpenTail.ManagerDetector](http://userscripts.org/scripts/show/180487)
 * [Tieba Client](http://userscripts.org/scripts/show/177032)
+* [XuanFengEx](http://userscripts.org/scripts/show/160258 "QQ旋风网页版离线下载增强")
