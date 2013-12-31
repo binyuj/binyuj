@@ -9,7 +9,9 @@ GSNOVA_DIR=$PWD
 
 build_product(){
     export GOPATH="$GSNOVA_DIR"
+    git clone https://github.com/yinqiwen/godns.git $GSNOVA_DIR/src/github.com/yinqiwen
     go get -u github.com/yinqiwen/godns
+    rm $GSNOVA_DIR/src/main/icon.syso
     go install -v ...
 }
 

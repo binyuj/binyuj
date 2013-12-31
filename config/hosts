@@ -1,9 +1,17 @@
-127.0.0.1  activate.adobe.com
-127.0.0.1 lmlicenses.wip4.adobe.com
-127.0.0.1 lm.licenses.adobe.com
+###### me start #####
 
-### pagodabox.com ###
-50.97.141.36    pagodabox.com
+173.194.127.71      plus.google.com
+74.125.128.113      www.youtube.com
+173.194.127.71      webcache.googleusercontent.com
+173.194.127.2       www.google.com
+173.194.127.71      www.blogger.com
+173.194.127.71      1.bp.blogspot.com
+173.194.127.71      2.bp.blogspot.com
+173.194.127.71      3.bp.blogspot.com
+173.194.127.71      4.bp.blogspot.com
+
+
+
 
 ### imageshack.us ###
 208.94.0.193        imageshack.us
@@ -51,162 +59,7 @@
 2404:6800:4005:c00::69 encrypted-tbn3.gstatic.com
 
 76.73.90.170 www.253874.com 
-###### me start #####
 
-2404:6800:4005:0:0:0:0:6    r1---hkg05s01.c.youtube.com
-2404:6800:4005:2::6         r1---hkg05s03.c.youtube.com
-2404:6800:4005:0:0:0:0:6    r1---hkg03s05.c.youtube.com
-
-2404:6800:4005:c::6         r1---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:6::6         r1---sn-i3b7sn7k.c.youtube.com
-2404:6800:4005::6           r1---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:3::6         r1---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:c00::67      r1---sn-o097zue6.c.youtube.com  
-2404:6800:4005:c00::67      r1---sn-o097zuee.c.youtube.com
-2404:6800:4003:7::6         r1---sn-npo7enes.c.youtube.com
-
-2001:4860:4007:5::7         r2---sn-a5m7ln7z.c.youtube.com
-2607:f8b0:4002:a:0:0:0:7    r2---sn-i3b76n7l.c.youtube.com
-2607:f8b0:4002:a:0:0:0:7    r2---sn-5uaezney.c.youtube.com
-2404:6800:4005:6::7         r2---sn-i3b7sn7k.c.youtube.com
-2404:6800:4005:7:0:0:0:7    r2---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:7:0:0:0:7    r2---sn-p5qlsu7s.c.youtube.com
-
-2404:6800:4005:2:0:0:0:8    r3---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:c::8         r3---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:6::8         r3---sn-i3b7sn7k.c.youtube.com
-
-
-2404:6800:4005:0:0:0:0:9    r4---hkg05s01.c.youtube.com
-
-2404:6800:4005:1:0:0:0:9    r4---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:4::9         r4---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:c::9         r4---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:7::9         r4---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:1:0:0:0:9    r4---sn-p5qlsu7d.c.youtube.com
-2404:6800:4008:8::9         r4---sn-u2x76n7y.c.youtube.com
-74.125.213.83               r4---sn-o097zues.c.youtube.com
-2607:f8b0:4002:b::9         r4---sn-5uaeznl7.c.youtube.com
-
-2404:6800:4005::a           r5---hkg05s01.c.youtube.com
-2404:6800:4005:2::a         r5---hkg05s03.c.youtube.com
-2404:6800:4005:0:0:0:0:a    r5---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:1::a         r5---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:d::a         r5---sn-i3b7sn7l.c.youtube.com
-2607:f8b0:4002:b:0:0:0:a    r5---sn-5uaeznl7.c.youtube.com
-
-
-2404:6800:4005:4:0:0:0:b    r6---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:0:0:0:0:b    r6---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:7::b         r6---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:2:0:0:0:b    r6---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3:0:0:0:b    r6---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:2:0:0:0:b    r6---sn-o097zuek.c.youtube.com
-2404:6800:4005:2:0:0:0:b    r6---sn-o097zued.c.youtube.com
-2404:6800:4005:0:0:0:0:b    r6---hkg05s01.c.youtube.com
-2404:6800:4005:0:0:0:0:b    r6---sn-p5qlsu7d.c.youtube.com
-
-2404:6800:4005:0:0:0:0:c    r7---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:3::c         r7---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:5::c         r7---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:c::c         r7---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:0:0:0:0:c    r7---hkg05s01.c.youtube.com
-2404:6800:4005:0:0:0:0:c    r7---sn-p5qlsu7e.c.youtube.com
-74.125.213.86               r7---sn-o097zues.c.youtube.com
-
-2404:6800:4005:0:0:0:0:6    r8---sn-cg07luez.c.youtube.com
-2404:6800:4005::d           r8---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:2::d         r8---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:5::d         r8---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:0:0:0:0:6    r8---sn-p5qlsu7r.c.youtube.com
-2404:6800:4005:d::d         r8---sn-i3b7sn7l.c.youtube.com
-
-
-2404:6800:4005:0:0:0:0:e    r9---hkg05s01.c.youtube.com
-2404:6800:4005:4::e         r9---hkg03s05.c.youtube.com
-2404:6800:4005:4:0:0:0:e    r9---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:5:0:0:0:e    r9---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:1::e         r9---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:7::e         r9---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:2:0:0:0:e    r9---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3::e         r9---sn-i3b76n7z.c.youtube.com
-2607:f8b0:400a:b::e         r9---sn-nx57ynez.c.youtube.com
-
-2404:6800:4005:4:0:0:0:f    r10---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:c::f         r10---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:e::f         r10---sn-i3b7sn7s.c.youtube.com
-2404:6800:4005:2:0:0:0:f    r10---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3::f         r10---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:0:0:0:0:f    r10---hkg05s01.c.youtube.com
-2404:6800:4005:6:0:0:0:f    r10---sn-i3b7sn7k.c.youtube.com
-
-2001:4860:4007:5::10        r11---sn-a5m7ln7z.c.youtube.com
-2404:6800:4005:4::10        r11---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:7::10        r11---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:2::10        r11---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3:0:0:0:10   r11---sn-i3b76n7z.c.youtube.com
-
-2404:6800:4005:4::11        r12---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:1::11        r12---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:2::11        r12---sn-i3b76n7s.c.youtube.com
-
-2404:6800:4005::12          r13---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:4::12        r13---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:5:0:0:0:12   r13---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:d::12        r13---sn-i3b7sn7l.c.youtube.com
-2404:6800:4005:1:0:0:0:12   r13---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:2::12        r13---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3:0:0:0:12   r13---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:1:0:0:0:12   r13---sn-p5qlsm7z.c.youtube.com
-
-2404:6800:4005:4::13        r14---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:6::13        r14---sn-i3b7sn7k.c.youtube.com
-2404:6800:4005:f::13        r14---sn-i3b7sn7z.c.youtube.com
-2404:6800:4005:1::13        r14---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:3:0:0:0:13   r14---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:2::13        r14---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3:0:0:0:13   r14---sn-npo7enes.c.youtube.com
-
-2404:6800:4005:5:0:0:0:14   r15---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:5:0:0:0:15   r15---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:2:0:0:0:14   r15---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:6:0:0:0:14   r15---sn-i3b7sn7k.c.youtube.com
-2404:6800:4005:d::14        r15---sn-i3b7sn7l.c.youtube.com
-
-2404:6800:4005:1::15        r16---sn-i3b76n7l.c.youtube.com
-2404:6800:4005::15          r16---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:2:0:0:0:15   r16---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3::15        r16---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:5::15        r16---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:c::15        r16---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:7::15        r16---sn-i3b7sn7r.c.youtube.com
-2404:6800:4005:f::15        r16---sn-i3b7sn7z.c.youtube.com
-
-2001:4860:4007:4::16        r17---sn-a5m7ln7s.c.youtube.com
-2404:6800:4005:0:0:0:0:16   r17---hkg05s01.c.youtube.com
-2404:6800:4005:2:0:0:0:16   r17---hkg05s03.c.youtube.com
-2404:6800:4005::16          r17---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:1:0:0:0:16   r17---sn-i3b76n7l.c.youtube.com
-
-2001:4860:4007:5::17        r18---sn-a5m7ln7z.c.youtube.com
-2404:6800:4005::17          r18---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:1:0:0:0:17   r18---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:2::17        r18---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3::17        r18---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:5:0:0:0:17   r18---sn-i3b7sn7d.c.youtube.com
-2404:6800:4005:c::17        r18---sn-i3b7sn7e.c.youtube.com
-2404:6800:4005:d::17        r18---sn-i3b7sn7l.c.youtube.com
-
-2404:6800:4005:0:0:0:0:18   r19---sn-i3b76n7e.c.youtube.com
-2404:6800:4005:1:0:0:0:18   r19---sn-i3b76n7l.c.youtube.com
-2404:6800:4005:2::18        r19---sn-i3b76n7s.c.youtube.com
-2404:6800:4005:3::18        r19---sn-i3b76n7z.c.youtube.com
-2404:6800:4005:4:0:0:0:18   r19---sn-i3b7sn76.c.youtube.com
-
-2404:6800:4005:4:0:0:0:19   r20---sn-i3b7sn76.c.youtube.com
-2404:6800:4005:2:0:0:0:19   r20---sn-i3b76n7s.c.youtube.com
-#2404:6800:4005:4:0:0:0:66    tc.v16.cache3.c.youtube.com
-#2404:6800:4005:4:0:0:0:66    tc.v14.cache3.c.youtube.com
 ###### me end #####
 
 
@@ -4854,7 +4707,7 @@
 2600:140e:1::3cfe:8335 static.ak.fbcdn.net #static.ak.facebook.com.edgesuite.net
 2600:140e:1::3cfe:8338 platform.ak.fbcdn.net #platform.ak.facebook.com.edgesuite.net
 2600:140e:1::3cfe:833d profile.ak.fbcdn.net #profile.ak.facebook.com.edgesuite.net
-2600:140e:1::3cfe:8348 fbcdn-profile-a.akamaihd.net#fbcdn-profile-a.akamaihd.net.edgesuite.net
+2001:418:4000:7::cc01:883a fbcdn-profile-a.akamaihd.net#fbcdn-profile-a.akamaihd.net.edgesuite.net
 2600:140e:1::3cfe:8337 static.ak.facebook.com #static.ak.facebook.com.edgesuite.net
 2600:140e:1::3cfe:833f photos-a.ak.fbcdn.net
 2600:140e:1::3cfe:833f photos-e.ak.fbcdn.net
@@ -5970,7 +5823,7 @@
 2001:778:0:ffff:64:0:b8a9:4f21 a4.twimg.com #orig-10004.twitter.cotcdn.net
 2001:778:0:ffff:64:0:214:b60a a5.twimg.com #a1441.l.akamai.net
 2001:778:0:ffff:64:0:215:6f90 p.twimg.com #e3826.g.akamaiedge.net
-2001:778:0:ffff:64:0:b8a9:4f21 pbs.twimg.com #orig-10014.twitter.cotcdn.net
+#2001:778:0:ffff:64:0:b8a9:4f21 pbs.twimg.com #orig-10014.twitter.cotcdn.net
 2001:778:0:ffff:64:0:c73b:95eb r.twimg.com
 2001:778:0:ffff:64:0:36f0:a850 s.twimg.com #d2rdfnizen5apl.cloudfront.net
 2001:778:0:ffff:64:0:b8a9:4f21 si0.twimg.com #orig-10004.twitter.cotcdn.net
@@ -6083,13 +5936,13 @@
 203.208.46.200  8.drive.google.com
 203.208.46.200  9.docs.google.com
 203.208.46.200  9.drive.google.com
-203.208.46.200  accounts.google.com
-203.208.46.200  accounts.l.google.com
+173.194.127.70  accounts.google.com
+173.194.127.70  accounts.l.google.com
 203.208.46.200  answers.google.com
-203.208.46.200  apis.google.com
-203.208.46.200  appengine.google.com
-203.208.46.200  apps.google.com
-203.208.46.200  appspot.l.google.com
+74.125.128.100  apis.google.com
+173.194.127.70  appengine.google.com
+173.194.127.70  apps.google.com
+173.194.127.70  appspot.l.google.com
 203.208.46.200  bks0.books.google.com
 203.208.46.200  bks1.books.google.com
 203.208.46.200  bks10.books.google.com
@@ -6393,15 +6246,15 @@
 203.208.46.202  qhie5b8u979rnch1q0hqbrmbkn9estf7-a-oz-opensocial.googleusercontent.com
 203.208.46.202  r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
 203.208.46.202  rbjhe237k979f79d87gmenp3gejfonu9-a-oz-opensocial.googleusercontent.com
-203.208.46.202  s1.googleusercontent.com
-203.208.46.202  s2.googleusercontent.com
-203.208.46.202  s3.googleusercontent.com
-203.208.46.202  s4.googleusercontent.com
-203.208.46.202  s5.googleusercontent.com
-203.208.46.202  s6.googleusercontent.com
+74.125.128.132  s1.googleusercontent.com
+74.125.128.132  s2.googleusercontent.com
+74.125.128.132  s3.googleusercontent.com
+74.125.128.132  s4.googleusercontent.com
+74.125.128.132  s5.googleusercontent.com
+74.125.128.132  s6.googleusercontent.com
 203.208.46.202  spreadsheets-opensocial.googleusercontent.com
 203.208.46.202  t.doc-0-0-sj.sj.googleusercontent.com
-203.208.46.202  themes.googleusercontent.com
+74.125.128.132  themes.googleusercontent.com
 203.208.46.202  translate.googleusercontent.com
 203.208.46.202  u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
 203.208.46.202  upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
@@ -6564,9 +6417,9 @@
 203.208.46.222  www.googlesource.com
 173.194.37.99   www.panoramio.com
 
-203.208.46.200  plus.google.com
-203.208.46.200  plus.url.google.com
-203.208.46.200  plusone.google.com
+74.125.128.100  plus.google.com
+74.125.128.100  plus.url.google.com
+74.125.128.100  plusone.google.com
 #Google Services END
 
 #Facebook Start
@@ -6652,27 +6505,27 @@
 #data from HostsX
 68.142.214.24   flickr.com
 66.196.66.157   www.flickr.com
-68.142.214.43   static.flickr.com
-77.238.160.184  static.flickr.com
+206.190.34.126  static.flickr.com
+216.39.54.34    static.flickr.com
 209.191.105.102 adjax.flickr.yahoo.com
-68.142.214.43   farm1.staticflickr.com
-68.142.214.43   mud.farm1.staticflickr.com
-69.147.90.159   farm2.staticflickr.com
-69.147.90.159   sp1.farm2.staticflickr.com
-77.238.160.184  farm3.staticflickr.com
+206.190.34.126  farm1.staticflickr.com
+206.190.34.126  mud.farm1.staticflickr.com
+206.190.44.188  farm2.staticflickr.com
+206.190.44.188  sp1.farm2.staticflickr.com
+216.39.54.34    farm3.staticflickr.com
 98.137.205.236  bf1.farm3.staticflickr.com
 216.39.54.34    gq1.farm3.staticflickr.com
 69.147.90.215   sp1.farm3.staticflickr.com
-76.13.18.77 farm4.staticflickr.com
-76.13.18.77 ac4.farm4.staticflickr.com
+67.195.19.62    farm4.staticflickr.com
+76.13.18.77     ac4.farm4.staticflickr.com
 67.195.19.62    gq1.farm4.staticflickr.com
-76.13.18.79 farm5.staticflickr.com
+67.195.19.65    farm5.staticflickr.com
 67.195.19.65    gq1.farm5.staticflickr.com
 98.136.171.208  farm6.staticflickr.com
 98.139.21.45    bf1.farm6.staticflickr.com
 98.136.171.208  gq1.farm6.staticflickr.com
 98.138.250.88   farm7.staticflickr.com
-98.139.235.135  bf1.farm7.staticflickr.com
+98.138.250.88   bf1.farm7.staticflickr.com
 98.138.250.88   ne1.farm7.staticflickr.com
 #Flickr END
 
@@ -6695,19 +6548,19 @@
 #Adobe Activation END
 
 #YouTube START
-203.208.46.206  accounts.youtube.com
-203.208.46.206  apiblog.youtube.com
-203.208.46.206  help.youtube.com
-203.208.46.206  i.ytimg.com
-203.208.46.206  i1.ytimg.com
-203.208.46.206  i2.ytimg.com
-203.208.46.206  i3.ytimg.com
-203.208.46.206  i4.ytimg.com
-203.208.46.206  insight.youtube.com
-203.208.46.206  m.youtube.com
-203.208.46.206  s.ytimg.com
-203.208.46.206  www.youtube.com
-203.208.46.206  ytimg.l.google.com
+74.125.128.138  accounts.youtube.com
+74.125.128.138  apiblog.youtube.com
+74.125.128.138  help.youtube.com
+173.194.127.72  i.ytimg.com
+173.194.127.72  i1.ytimg.com
+173.194.127.72  i2.ytimg.com
+173.194.127.72  i3.ytimg.com
+173.194.127.72  i4.ytimg.com
+74.125.128.138  insight.youtube.com
+74.125.128.138  m.youtube.com
+173.194.127.72  s.ytimg.com
+74.125.128.138  www.youtube.com
+173.194.127.72  ytimg.l.google.com
 #YouTube END
 
 
