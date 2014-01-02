@@ -1,5 +1,6 @@
 ###### me start #####
 
+173.194.127.206     plus.google.com
 173.194.127.71      plus.google.com
 74.125.128.113      www.youtube.com
 173.194.127.71      webcache.googleusercontent.com
@@ -10,8 +11,13 @@
 173.194.127.71      3.bp.blogspot.com
 173.194.127.71      4.bp.blogspot.com
 
+74.125.235.200      www.android.com
 
+### wikipedia.org ###
+208.80.154.240      upload.wikimedia.org
 
+### twitter ###
+199.59.148.149      t.co
 
 ### imageshack.us ###
 208.94.0.193        imageshack.us
@@ -41,7 +47,7 @@
 2404:6800:4005:c00::69  ipv6.google.com
 2404:6800:4005:c00::65  goagent.googlecode.com
 2404:6800:4005:c00::65  ipv6-hosts.googlecode.com 
-203.208.46.200         code.google.com
+173.194.127.71          code.google.com
 
 #203.208.46.131 appengine.google.com
 #173.194.38.135 appengine.google.com
@@ -4821,7 +4827,7 @@
 2620:0:861:ed1a:: incubator.wikimedia.org
 2620:0:861:ed1a:: meta.wikimedia.org
 2620:0:861:ed1a:: species.wikimedia.org
-2620:0:860:ed1a::b upload.wikimedia.org #upload-lb.pmtpa.wikimedia.org
+2620:0:861:ed1a::b upload.wikimedia.org #upload-lb.pmtpa.wikimedia.org
 2620:0:861:ed1a:: www.wikimedia.org
 2620:0:861:ed1a::8 www.mediawiki.org #mediawiki-lb.eqiad.wikimedia.org
 #2620:0:862:1:209:3dff:fe10:d5d2 svn.wikimedia.org #Wikimedia Subversion
@@ -5991,7 +5997,7 @@
 203.208.46.200  desktop.google.com
 203.208.46.200  desktop.l.google.com
 203.208.46.200  desktop2.google.com
-203.208.46.200  developers.google.com
+173.194.127.71  developers.google.com
 203.208.46.200  ditu.google.com
 203.208.46.200  dl.google.com
 203.208.46.200  dl.l.google.com
