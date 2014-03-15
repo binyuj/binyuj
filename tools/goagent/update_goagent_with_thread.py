@@ -24,10 +24,10 @@ config = configparser.ConfigParser()
 config.read('proxy.ini')
 appids = config.has_option('gae', 'appid') and config.get('gae', 'appid')
 gae_password = config.has_option('gae', 'password') and config.get('gae', 'password')
-print('Found appids:%s\n' % appids)
-fetchserver = config.has_option('paas', 'fetchserver') and config.get('paas', 'fetchserver')
-paas_password = config.has_option('paas', 'password') and config.get('paas', 'password')
-print('Found fetchserver:%s\n' % fetchserver)
+print('Found appids:%s\nGot Password:%s\n' % (appids, gae_password))
+fetchserver = config.has_option('php', 'fetchserver') and config.get('php', 'fetchserver')
+php_password = config.has_option('php', 'password') and config.get('php', 'password')
+print('Found fetchserver:%s\nGot Password:%s\n' % (fetchserver, php_password))
 
 class Update(threading.Thread):
     def __init__(self, filename):
@@ -54,11 +54,11 @@ class Update(threading.Thread):
                 config.read('proxy.ini')
                 config.set('gae', 'appid', appids)
                 config.set('gae', 'password', gae_password)
-                config.set('paas', 'fetchserver', fetchserver)
-                config.set('paas', 'password', paas_password)
+                config.set('php', 'fetchserver', fetchserver)
+                config.set('php', 'password', php_password)
                 config.write(open('proxy.ini', 'wb'))
                 print('Successful wrote appids !')
-            except Exception,e:
+            except Exception as e:
                 print('wrote appids failed (T＿T)\nError log: %s' % e)
 
 def main():

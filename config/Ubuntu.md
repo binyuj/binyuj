@@ -33,3 +33,5 @@ userscripts
 * [Tieba.OpenTail.ManagerDetector](http://userscripts.org/scripts/show/180487)
 * [Tieba Client](http://userscripts.org/scripts/show/177032)
 * [XuanFengEx](http://userscripts.org/scripts/show/160258 "QQ旋风网页版离线下载增强")
+
+[妈妈再也不用担心我的macbook发烫了计划2.0Beta](http://zythum.sinaapp.com/youkuhtml5playerbookmark "在优酷等在线视频网站切换html5方式播放视频。解决Linux下看视频发热大的问题，顺便把广告也屏蔽掉了，Windows也可以用。")
