@@ -69,18 +69,17 @@ TI/Wjlv1JdUdNKwHcvfumFNuPQPLziD3m3DRGyBPkWsS2s/h4qcI+g/uPOcJK79rWbTv0bEy9rqZ
 tDXWvuH0qD8PponhVLu3Dv6dmGXsda2bpdGIxr6lvzy3D2CLt7HJY3a/n9r/N/sfrBt2air9qXQA
 AAAASUVORK5CYII="""
 
-try:
-    import proxy
-    __goagent_version__ = proxy.__version__
-except Exception:
-    __goagent_version__ = 'Not Found'
 import sys
 import os
 import re
 import thread
 import base64
 import platform
-import time
+
+try:
+    __goagent_version__ =  re.compile(r"__version__\s*=\s*\'(.+)\'").search(open('proxy.py',).read()).group(1)
+except Exception:
+    __goagent_version__ = 'Null'
 
 try:
     import pygtk
@@ -95,10 +94,6 @@ try:
 except ImportError:
     pynotify = None
 try:
-    import appindicator
-except ImportError:
-    appindicator = None
-try:
     import vte
 except ImportError:
     sys.exit(gtk.MessageDialog(None, gtk.DIALOG_MODAL, gtk.MESSAGE_ERROR, gtk.BUTTONS_OK, u'请安装 python-vte').run())
@@ -106,6 +101,7 @@ except ImportError:
 
 def spawn_later(seconds, target, *args, **kwargs):
     def wrap(*args, **kwargs):
+        import time
         time.sleep(seconds)
         return target(*args, **kwargs)
     return thread.start_new_thread(wrap, args, kwargs)
@@ -138,18 +134,14 @@ def should_visible():
     import ConfigParser
     ConfigParser.RawConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = ConfigParser.ConfigParser()
-    config.read('proxy.ini')
+    config.read(['proxy.ini', 'proxy.user.ini'])
     visible = config.has_option('listen', 'visible') and config.getint('listen', 'visible')
     return visible
 
 #gtk.main_quit = lambda: None
 #appindicator = None
 
-logo_file = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'goagent-logo.png')
-if not os.path.isfile(logo_file):
-    with open(logo_file, 'wb') as fp:
-        fp.write(base64.b64decode(GOAGENT_LOGO_DATA))
-                
+logo_filename = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'goagent-logo.png')
 
 class GoAgentGTK:
 
@@ -159,21 +151,28 @@ class GoAgentGTK:
 
     def __init__(self, window, terminal):
         self.window = window
-        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '正在运行')))
+        self.window.set_title(' '.join(('GoAgent', __goagent_version__, u'正在运行')))
         self.window.set_size_request(652, 447)
-        # 居中显示
         self.window.set_position(gtk.WIN_POS_CENTER)
-        self.window.set_icon_from_file(logo_file)
+        self.window.set_icon_from_file(logo_filename)
         self.window.connect('delete-event',self.delete_event)
-        
         self.terminal = terminal
+        self.terminal.set_scrollback_lines(1000)
+        self.terminal.set_font_from_string("DejaVu Sans Mono  10")
+
+        self.scrollbar = gtk.VScrollbar()
+        self.scrollbar.set_adjustment(self.terminal.get_adjustment())
+
+        self.box = gtk.HBox()
+        self.box.pack_start(self.terminal)
+        self.box.pack_start(self.scrollbar)
 
         for cmd in ('python2.7', 'python27', 'python2'):
             if os.system('which %s' % cmd) == 0:
                 self.command[1] = cmd
                 break
 
-        self.window.add(terminal)
+        self.window.add(self.box)
         self.childpid = self.terminal.fork_command(self.command[0], self.command, os.getcwd())
         if self.childpid > 0:
             self.childexited = self.terminal.connect('child-exited', self.on_child_exited)
@@ -186,21 +185,19 @@ class GoAgentGTK:
         if should_visible():
             self.window.show_all()
 
+        
+        if not os.path.isfile(logo_filename):
+            with open(logo_filename, 'wb') as fp:
+                fp.write(base64.b64decode(GOAGENT_LOGO_DATA))
+        self.window.set_icon_from_file(logo_filename)
 
 
-        if appindicator:
-            self.trayicon = appindicator.Indicator('GoAgent', 'indicator-messages', appindicator.CATEGORY_APPLICATION_STATUS)
-            self.trayicon.set_status(appindicator.STATUS_ACTIVE)
-            self.trayicon.set_attention_icon('indicator-messages-new')
-            self.trayicon.set_icon(logo_file)
-            self.trayicon.set_menu(self.make_menu())
-        else:
-            self.trayicon = gtk.StatusIcon()
-            self.trayicon.set_from_file(logo_file)
-            self.trayicon.connect('popup-menu', lambda i, b, t: self.make_menu().popup(None, None, gtk.status_icon_position_menu, b, t, self.trayicon))
-            self.trayicon.connect('activate', self.show_hide_toggle)
-            self.trayicon.set_tooltip('GoAgent')
-            self.trayicon.set_visible(True)
+        self.trayicon = gtk.StatusIcon()
+        self.trayicon.set_from_file(logo_filename)
+        self.trayicon.connect('popup-menu', lambda i, b, t: self.make_menu().popup(None, None, gtk.status_icon_position_menu, b, t, self.trayicon))
+        self.trayicon.connect('activate', self.show_hide_toggle)
+        self.trayicon.set_tooltip(' '.join(('GoAgent', __goagent_version__, u'正在运行')))
+        self.trayicon.set_visible(True)
 
     def make_menu(self):
         menu = gtk.Menu()
@@ -219,7 +216,7 @@ class GoAgentGTK:
 
     def show_notify(self, message=None, timeout=None):
         if pynotify and message:
-            notification = pynotify.Notification('GoAgent Notify', message, logo_file)
+            notification = pynotify.Notification('GoAgent Notify', message, logo_filename)
             notification.set_hint('x', 200)
             notification.set_hint('y', 400)
             if timeout:
@@ -244,6 +241,7 @@ class GoAgentGTK:
             gtk.main_quit()
         else:
             self.show_notify(self.fail_message)
+            self.trayicon.set_tooltip(self.fail_message)
 
     def on_show(self, widget, data=None):
         self.window.show_all()
@@ -257,8 +255,8 @@ class GoAgentGTK:
         if self.childexited:
             self.terminal.disconnect(self.childexited)
         os.system('kill -9 %s' % self.childpid)
-        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '已停止')))
-        self.trayicon.set_tooltip('GoAgent 已停止')
+        self.window.set_title(' '.join(('GoAgent', __goagent_version__, u'已停止')))
+        self.trayicon.set_tooltip(' '.join(('GoAgent', __goagent_version__, u'已停止')))
 
     def on_reload(self, widget, data=None):
         if self.childexited:
@@ -267,8 +265,8 @@ class GoAgentGTK:
         self.on_show(widget, data)
         self.childpid = self.terminal.fork_command(self.command[0], self.command, os.getcwd())
         self.childexited = self.terminal.connect('child-exited', lambda term: gtk.main_quit())
-        self.window.set_title(' '.join(('GoAgent ', __goagent_version__, '正在运行')))
-        self.trayicon.set_tooltip('GoAgent 正在运行')
+        self.window.set_title(' '.join(('GoAgent', __goagent_version__, u'正在运行')))
+        self.trayicon.set_tooltip(' '.join(('GoAgent', __goagent_version__, u'正在运行')))
 
     def show_hide_toggle(self, widget, data= None):
         if self.window.get_property('visible'):
@@ -276,13 +274,14 @@ class GoAgentGTK:
         else:
             self.on_show(widget, data)
 
-    def on_quit(self, widget, data=None):
-        gtk.main_quit()
-
     def delete_event(self, widget, data=None):
         self.on_hide(widget, data)
         # 默认最小化至托盘
         return True
+
+    def on_quit(self, widget, data=None):
+        gtk.main_quit()
+
 
 def main():
     global __file__
