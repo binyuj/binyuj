@@ -77,7 +77,7 @@ import base64
 import platform
 
 try:
-    __goagent_version__ =  re.compile(r"__version__\s*=\s*\'(.+)\'").search(open('proxy.py',).read()).group(1)
+    __goagent_version__ =  re.compile(r"__version__\s*=\s*\'(.+)\'").search(open(os.path.join(os.path.abspath(os.path.dirname(__file__)), 'proxy.py'),).read()).group(1)
 except Exception:
     __goagent_version__ = 'Null'
 
