@@ -47,7 +47,7 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-  # We have color support; assume it's compliant with Ecma-48
+	# We have color support; assume it's compliant with Ecma-48
 	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
 	# a case would tend to support setf rather than setaf.)
 	color_prompt=yes
@@ -91,6 +91,7 @@ alias l='ls -CF'
 
 alias nslookup6='nslookup -type=AAAA'
 
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -115,9 +116,25 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+# Here is bash color codes you can use
+  black=$'\[\e[1;30m\]'
+    red=$'\[\e[1;31m\]'
+  green=$'\[\e[1;32m\]'
+ yellow=$'\[\e[1;33m\]'
+   blue=$'\[\e[1;34m\]'
+magenta=$'\[\e[1;35m\]'
+   cyan=$'\[\e[1;36m\]'
+  white=$'\[\e[1;37m\]'
+ normal=$'\[\e[m\]'
+
+
 #区分命令与输出
+#PS1="\[\e[35;47m\u: \e[01;34m\w   \e[01;30m****\t****         \e[0m\]\n\[\e[32;41m > \e[0m "
+#PS1="\e[35;40m\u: \w > \e[0m "
+#PS1="\e[32;40m\u: \w > \e[0m"
 #PS1='\[\e[32;40m\]\u@\h:\W$ '
-PS1='\[\033[01;32m\][\[\033[01;31m\]\#\[\033[01;32m\]] \[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w \[\033[01;31m\]\$\[\033[0m\] '
+#PS1='\[\e[01;32m\][\[\e[01;31m\]\#\[\e[01;32m\]] \[\e[01;32m\]\u\e[m\e[1;33m@\e[m\e[1;35m\h\[\e[00m\]: \[\e[01;34m\]\w \[\e[01;31m\]\$\[\e[0m\] '
 #PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\# \$ '
 #PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[00m\]\w\[\033[01;31m\]\$ \[\033[0m\]'
 #PS1='\[\033[34m\][\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[00m\]\w\[\033[34m\]]\[\033[01;31m\]\$ \[\033[0m\]'
@@ -127,4 +144,16 @@ if [ `tty | grep tty` ]; then
  export LC_ALL="C"
  export LANGUAGE="en_US.UTF-8"
  export LANG="en_US.UTF-8"
+fi
+
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/kingsoft/wps-office/office6
+
+
+PS1='\[\033[01;32m\][\[\033[01;31m\]\#\[\033[01;32m\]] \[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w \[\033[01;31m\]\$\[\033[0m\] '
+
+if [ -f ~/.git-prompt.sh ]; then
+    #wget --no-check-certificate -O ~/.git-prompt.sh https://raw.github.com/git/git/master/contrib/completion/git-prompt.sh
+    source ~/.git-prompt.sh
+    PS1='\[\e]0;\w\a\]\n\[\033[01;32m\][\[\033[01;31m\]\#\[\033[01;32m\]] \[\033[01;32m\]\u@\h\[\033[00m\]: \[\033[01;34m\]\w\[\e[1;37m\]$(__git_ps1 " (%s)") \[\033[01;31m\]\$\[\033[0m\] '
+    #export PS1='\[\e]0;\w\a\]\n\[\e[01;32m\]\u@\h\[\e[00;33m\] \w \[\e[1;37m\]$(__git_ps1 "(%s)")\n\[\e[1;$((31+3*!$?))m\]\$\[\e[00m\] '
 fi
