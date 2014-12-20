@@ -77,30 +77,30 @@
 
 
 ### wikipedia.org ###
-208.80.154.225 wikipedia.org
-208.80.154.225 www.wikipedia.org
-208.80.154.225 bits.wikipedia.org
-208.80.154.225 en.wikipedia.org
-208.80.154.225 zh.wikipedia.org
-208.80.154.225 simple.wikipedia.org
-208.80.154.225 wikibooks.org
-208.80.154.225 www.wikibooks.org
-208.80.154.225 en.wikibooks.org
-208.80.154.225 zh.wikibooks.org
-208.80.154.225 wikinews.org
-208.80.154.225 www.wikinews.org
-208.80.154.225 en.wikinews.org
-208.80.154.225 zh.wikinews.org
-208.80.154.225 wikiquote.org
-208.80.154.225 www.wikiquote.org
-208.80.154.225 en.wikiquote.org
-208.80.154.225 zh.wikiquote.org
-208.80.154.225 zh.wikisource.org
-208.80.154.225 en.wikisource.org
-208.80.154.225 wiktionary.org
-208.80.154.225 www.wiktionary.org
-208.80.154.225 en.wiktionary.org
-208.80.154.225 zh.wiktionary.org
+198.35.26.96   wikipedia.org
+198.35.26.96   www.wikipedia.org
+198.35.26.96   bits.wikipedia.org
+198.35.26.96   en.wikipedia.org
+198.35.26.96   zh.wikipedia.org
+198.35.26.96   simple.wikipedia.org
+198.35.26.96   wikibooks.org
+198.35.26.96   www.wikibooks.org
+198.35.26.96   en.wikibooks.org
+198.35.26.96   zh.wikibooks.org
+198.35.26.96   wikinews.org
+198.35.26.96   www.wikinews.org
+198.35.26.96   en.wikinews.org
+198.35.26.96   zh.wikinews.org
+198.35.26.96   wikiquote.org
+198.35.26.96   www.wikiquote.org
+198.35.26.96   en.wikiquote.org
+198.35.26.96   zh.wikiquote.org
+198.35.26.96   zh.wikisource.org
+198.35.26.96   en.wikisource.org
+198.35.26.96   wiktionary.org
+198.35.26.96   www.wiktionary.org
+198.35.26.96   en.wiktionary.org
+198.35.26.96   zh.wiktionary.org
 208.80.154.224 wikimedia.org
 208.80.154.224 www.wikimedia.org
 208.80.154.224 bugs.wikimedia.org
@@ -122,9 +122,9 @@
 208.80.154.224 tools.wikimedia.org
 208.80.154.240 upload.wikimedia.org
 208.80.154.224 wikimediafoundation.org
-208.80.154.225 www.wikimediafoundation.org
-208.80.154.225 mediawiki.org
-208.80.154.225 www.mediawiki.org
+198.35.26.96   www.wikimediafoundation.org
+198.35.26.96   mediawiki.org
+198.35.26.96   www.mediawiki.org
 208.80.154.234 bits.wikimedia.org
 
 #Operachina
@@ -708,6 +708,7 @@
 203.79.253.57   www.googleapis.com
 
 ### googlecode ###
+203.79.253.57    googlecode.com
 203.79.253.57    autoproxy-gfwlist.googlecode.com
 203.79.253.57    chromium.googlecode.com
 203.79.253.57    closure-library.googlecode.com
