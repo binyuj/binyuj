@@ -11,7 +11,7 @@
 203.79.253.57        www.google.com
 64.233.176.113       www.google.com
 203.79.253.57        keep.google.com
-203.79.253.57        www.blogger.com
+64.233.187.191       www.blogger.com
 203.79.253.57        1.bp.blogspot.com
 203.79.253.57        2.bp.blogspot.com
 203.79.253.57        3.bp.blogspot.com
@@ -74,6 +74,7 @@
 192.0.80.240        0.gravatar.com
 192.0.80.240        1.gravatar.com
 192.0.80.240        2.gravatar.com
+192.0.80.240        s.gravatar.com
 
 
 ### wikipedia.org ###
@@ -583,6 +584,10 @@
 203.208.46.202  doc-14-7o-docs.googleusercontent.com
 203.208.46.202  feedback.googleusercontent.com
 203.208.46.202  googlehosted.l.googleusercontent.com
+203.79.253.57   gp3.googleusercontent.com
+203.79.253.57   gp4.googleusercontent.com
+203.79.253.57   gp5.googleusercontent.com
+203.79.253.57   gp6.googleusercontent.com
 203.208.46.202  hsco54a20sh11q9jkmb51ad2n3hmkmrg-a-oz-opensocial.googleusercontent.com
 203.208.46.202  i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
 203.208.46.202  images1-focus-opensocial.googleusercontent.com
@@ -675,7 +680,7 @@
 203.208.46.170  nt5.ggpht.com
 
 203.79.253.57    appspot.com
-173.194.64.141  chrometophone.appspot.com
+203.79.253.57    chrometophone.appspot.com
 203.79.253.57    evolutionofweb.appspot.com
 203.79.253.57    googcloudlabs.appspot.com
 203.79.253.57    gv-gadget.appspot.com
@@ -691,7 +696,7 @@
 203.79.253.57    r3269-dot-latest-dot-project-slingshot-gp.appspot.com
 203.79.253.57    r3432-dot-latest-dot-project-slingshot-hr.appspot.com
 203.79.253.57    r4681-dot-latest-dot-project-slingshot-hr.appspot.com
-203.208.46.170  r7647-dot-latest-dot-project-slingshot-hr.appspot.com
+203.79.253.57    r7647-dot-latest-dot-project-slingshot-hr.appspot.com
 203.79.253.57    wcproxyx.appspot.com
 203.79.253.57    www.appspot.com
 
